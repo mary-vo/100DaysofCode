@@ -5,3 +5,6 @@
 name = input("What is your name?")
 #Count characters in user's name 
 name_len = print(len(name))
+
+#Another solution
+print( len( input("What is your name? ") ) )
