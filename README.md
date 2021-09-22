@@ -1,2 +1,1 @@
-# 100DaysofCode_Day1
-All assignments from Day 1
+Assignments and exercises from 100DaysofCoding
