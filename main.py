@@ -9,9 +9,9 @@ b = input("b: ")
 ####################################
 #Write your code below this line 👇
 
+new_a = a
 a = b
-
-
+b = new_a
 
 
 #Write your code above this line 👆
