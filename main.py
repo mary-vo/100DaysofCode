@@ -9,7 +9,8 @@ b = input("b: ")
 ####################################
 #Write your code below this line 👇
 
-a=b
+a = b
+
 
 
 
