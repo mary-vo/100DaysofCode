@@ -7,4 +7,4 @@ print("Hello"+" Mary")
 print("Hello" + " " + "Mary")
 
 #Request for an input from the enduser and then print their input with a string "Hello"
-print("Hello " + input("What is your name?"))
+print("Hello " + input("What is your name?\n"))

@@ -1,0 +1,3 @@
+# To run a file other than main.py, create a program for each exercise, import it to main, and then execute it in replit
+language = "python3"
+run = "python day1/day-1-1-exercise.py"

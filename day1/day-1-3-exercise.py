@@ -2,7 +2,7 @@
 #Write your code below this line 👇
 
 #Request for user to input their name
-name = input("What is your name?")
+name = input("What is your name?\n")
 #Count characters in user's name 
 name_len = print(len(name))
 

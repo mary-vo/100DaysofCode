@@ -1,5 +1,3 @@
-language = "python3"
-run = "run"
 
 # 🚨 Don't change the code below 👇
 a = input("a: ")
