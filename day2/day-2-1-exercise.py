@@ -11,6 +11,10 @@ two_digit_number = input("Type a two digit number: ")
 ####################################
 #Write your code below this line 👇
 
+# Determine the datatype of two_digit_number
+print(type(two_digit_number))
+
+# Since two-digit-number is a str, we can subscript a string to return an element. The result is still a string, we need to cast to int.
 first_digit = int(two_digit_number[0])
 #print(first_digit)
 
@@ -22,4 +26,6 @@ second_digit = int(two_digit_number[1])
 #print(type(first_digit))
 #print(type(second_digit))
 
-print(first_digit + second_digit)
+# Add the two int digits and print the result
+result = first_digit + second_digit
+print(result)
