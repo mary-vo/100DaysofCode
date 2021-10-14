@@ -41,8 +41,9 @@ age = input("What is your current age?")
 
 #print(type(age))
 
+age_as_int
 
-years_left = 90 - int(age)
+years_left = 90 - age_as_int
 #print(years_left)
 #print(type(years_left))
 
