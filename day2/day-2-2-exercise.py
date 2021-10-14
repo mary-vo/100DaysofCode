@@ -1,4 +1,17 @@
-## BMI Calculator
+######## Notes from lecture
+3 + 5
+7-4
+3*2
+# When dividng, result is always a float
+print(6/3)
+# Exponents
+print(2 ** 2)
+
+print(3/3*3/3*3)
+
+
+
+######## Exercise - BMI Calculator
 # Instructions
 
 #Write a program that calculates the Body Mass Index (BMI) from a user's weight and height.
@@ -30,14 +43,3 @@ BMI = int(weight_float / (height_float ** 2))
 #bmi_as_int = int(BMI)
 print(BMI)
 #print(bmi_as_int)
-
-
-3 + 5
-7-4
-3*2
-# When dividng, result is always a float
-print(6/3)
-# Exponents
-print(2 ** 2)
-
-print(3/3*3/3*3)
