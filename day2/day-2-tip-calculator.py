@@ -30,10 +30,10 @@ print(type(total_people_as_int))
 
 ind_total =  (total_bill_as_float * (1 + tip_as_float/100)) / total_people_as_int
 
-# Round float to 2 decimal places
+# Round float to 2 decimal places using string formatting, which returns a string type
 ind_total_decimal = "{:.2f}".format(ind_total)
 #print(individual_total)
-
+#print(type(ind_total_decimal))
 
 print(f"Each person should pay: ${ind_total_decimal}")
 
