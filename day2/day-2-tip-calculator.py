@@ -4,10 +4,12 @@
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 #HINT 1: https://www.google.com/search?q=how+to+round+number+to+2+decimal+places+python&oq=how+to+round+number+to+2+decimal
 #HINT 2: https://www.kite.com/python/answers/how-to-limit-a-float-to-two-decimal-places-in-python
+
 print("Welcome to the tip calculator.")
 total_bill = input("What was the total bill?")
 tip = input(f"What percentage tip would you like to give? 10, 12, or 15?")
 total_people = input("How many people to split the bill?")
+
 '''
 print(type(total_bill))
 print(type(tip))
@@ -20,13 +22,25 @@ total_bill_as_float = float(total_bill)
 tip_as_float = float(tip)
 total_people_as_int = int(total_people)
 
-''''
+'''
 print(type(total_bill_as_float))
 print(type(tip_as_float))
 print(type(total_people_as_int))
 '''
-individual_total =  round((total_bill_as_float * (1 + 1/tip_as_float)) / total_people_as_int,2)
+
+ind_total =  (total_bill_as_float * (1 + tip_as_float/100)) / total_people_as_int
+
+# Round float to 2 decimal places
+ind_total_decimal = "{:.2f}".format(ind_total)
 #print(individual_total)
 
 
-print(f"Each person should pay: ${individual_total}")
+print(f"Each person should pay: ${ind_total_decimal}")
+
+
+'''
+decimal = 101.34879
+format_decimal = "{:.2f}".format(decimal)
+print(format_decimal)
+# Reference: https://queirozf.com/entries/python-number-formatting-examples#round-float-to-2-decimal-places
+'''
