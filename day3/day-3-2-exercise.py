@@ -1,4 +1,4 @@
-######## BMI Calculator 2.0
+######## Exercise - BMI Calculator 2.0
 # Instructions
 # Write a program that interprets the Body Mass Index (BMI) based on a user's weight and height.
 
