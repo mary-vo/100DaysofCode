@@ -12,8 +12,23 @@
 # >     **unless** the year is also evenly divisible by 400`
 
 print("Welcome to Leap Year Determination!")
-year = input("Input a yearWhich year do you want to check?\n")
+year = int(input("Which year do you want to check?\n"))
 
-if year % 4 !=:
-  print("Not leap year")
-elif
+if year%4 == 0 and year%100 == 0 and year%400 == 0:
+  print("Leap year.")
+elif year%4 == 0 and year%100 != 0:
+  print("Leap year.")
+else:
+  print("Not leap year.")
+
+# Angela's Solution
+# if year % 4 == 0:
+#   if year % 100 == 0:
+#     if year % 400 == 0:
+#       print("Leap year.")
+#     else:
+#       print("Not leap year.")
+#   else:
+#     print("Leap year.")
+# else:
+#   print("Not leap year.")
