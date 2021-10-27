@@ -60,3 +60,27 @@ if size == 'L':
 if extra_cheese == 'Y':
   bill += 1
 print(f"Your final bill is: ${bill}.")
+
+
+### Angela's solution
+bill = 0
+
+if size == 'S':
+   bill += 15
+elif size == 'M':
+  bill += 20
+else size == 'L':
+  bill += 25
+
+if add_pepperoni == 'Y':
+  if size == 'S':
+    bill += 2
+  else:
+    bill += 3
+
+if add_cheese -- 'Y':
+  bill += 1
+
+print(f"You final bill is: ${bill}.")
+
+
