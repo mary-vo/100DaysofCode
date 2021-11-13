@@ -64,15 +64,32 @@ names = names_string.split(", ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
-print(names)
+# print(names)
 
+# len() can return the number of items (length) in an object and works with lists, typles, and range. len() can return number of elements in a list or number of characters ina string 
 count = len(names)
-print(count)
+# print(count)
 
 import random
-random_list = random.randint(0,count) 
-print(random_list)
+random_list = random.randint(0,count-1) 
+# print(random_list)
 
 random_person = names[random_list]
 # print(random_person)
 print(f"{random_person} is going to buy the meal today!")
+
+
+
+
+######## Angela's solution
+# Get total number of items in list:
+num_items = len(names)
+
+random_choice = random.randin(0, num_items - 1)
+
+person_who_will_pay = names[random_choice]
+print(person_who_will_pay + " is going to buy the meal today!")
+
+##### Using choice():
+person_who_will_pay = random.choice(names)
+print(person_who_will_pay + " is going to buy the meal today!")
