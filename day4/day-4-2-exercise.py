@@ -37,6 +37,19 @@ https://docs.python.org/3/tutorial/datastructures.html
 You can convert a string into a list by using str.split(",")
 '''
 
+# dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
+# print(dirty_dozen)
+
+# How can we separate these out into fruits and vegetables?
+# You can technically create two lists (fruits and vegatables)
+# But, in this scenario, we have determined that the fruits and vegetables have a relationship. They're part of the dirty dozen. So, we can create a list within a list, this is called nested list:
+
+fruits = ["Strawberries", "Nectarines", "Apples", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+dirty_dozen = [fruits, vegetables]
+print(dirty_dozen)
+
 
 ######## Exercise - Who's Paying?
 # Instructions
