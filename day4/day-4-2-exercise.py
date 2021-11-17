@@ -43,12 +43,20 @@ print(dirty_dozen)
 How can we separate these out into fruits and vegetables?
 You can technically create two lists (fruits and vegatables)
 But, in this scenario, we have determined that the fruits and vegetables have a relationship. They're part of the dirty dozen. So, we can create a list within a list, this is called nested list:
-
+'''
 fruits = ["Strawberries", "Nectarines", "Apples", "Peaches", "Cherries", "Pears"]
 vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
 
 dirty_dozen = [fruits, vegetables]
+
 print(dirty_dozen)
+print(dirty_dozen[0])
+print(dirty_dozen[1])
+
+When nesting lists, you can reference elements within specific lists: 
+print(dirty_dozen[1][2])
+print(dirty_dozen[1][3])
+
 '''
 
 ######## Exercise - Who's Paying?
