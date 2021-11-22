@@ -89,10 +89,10 @@ position = input("Where do you want to put the treasure? ")
 #Write your code below this row 👇
 i = int(position[0])
 j = int(position[1])
-print(i)
-print(j)
-print(type(i))
-print(type(j))
+# print(i)
+# print(j)
+# print(type(i))
+# print(type(j))
 
 map[i][j] = 'x'
 
