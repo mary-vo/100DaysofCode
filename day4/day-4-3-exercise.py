@@ -87,17 +87,17 @@ print(f"{row1}\n{row2}\n{row3}") #printed with a new line in each row
 position = input("Where do you want to put the treasure? ")
 # 🚨 Don't change the code above 👆
 #Write your code below this row 👇
-i = int(position[0])
-j = int(position[1])
+i = int(position[0]) # This returns the value of the first number from position input which corresponds with rows
+j = int(position[1]) # This returns the value of the second number from position input which corresponds with columns
+
 # print(i)
 # print(j)
 # print(type(i))
 # print(type(j))
 
-map[i][j] = 'x'
+# We want to read the column first followed by rows, i.e. ji
 
-
-
+map[j-1][i-1] = 'x'
 
 
 
