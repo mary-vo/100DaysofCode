@@ -97,7 +97,7 @@ j = int(position[1]) # This returns the value of the second number from position
 
 # We want to read the column first followed by rows, i.e. ji
 
-map[j-1][i-1] = 'x'
+map[j-1][i-1] = 'X'
 
 
 
@@ -108,3 +108,9 @@ print(f"{row1}\n{row2}\n{row3}")
 
 
 ######## Angela's solution
+"23"
+horitzonal = position[0]
+vertical = position[1]
+
+selected_row = map[vertical - 1]
+selected_row[horizontal - 1]
