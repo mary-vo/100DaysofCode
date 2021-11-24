@@ -54,39 +54,40 @@ scissors = '''
 # Scissors(2) win against paper(1).
 # Paper(1) wins against rock(0).
 
+options = [rock, paper, scissors]
 
 #Write your code below this line 👇
 import random
 
-# choices = [rock, paper, scissors]
-# choices[0]
-
-
-
 response = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.")
 
 response_int = int(response)
-if response_int == 0:
-  print(rock)
-if response_int == 1:
-  print(paper)
-if response_int == 2:
-  print(scissors)
+if response_int >= 3 or response_int < 0:
+  print("You typed an invalid number")
+else:
+  print(options[response_int])
+
+# if response_int == 0:
+#   print(rock)
+# if response_int == 1:
+#   print(paper)
+# if response_int == 2:
+#   print(scissors)
 
 comp_response = random.randint(0,2)
 print(f"Computer chooses: {comp_response}")
-
-if comp_response == 0:
-  print(rock)
-if comp_response == 1:
-  print(paper)
-if comp_response ==2:
-  print(scissors)
+print(options[comp_response])
+# if comp_response == 0:
+#   print(rock)
+# if comp_response == 1:
+#   print(paper)
+# if comp_response ==2:
+#   print(scissors)
 
 
 if (response_int == 0 and comp_response == 2) or (response_int == 2 and comp_response == 1) or (response_int == 1 and comp_response == 0):  
   print("You win")
-if response_int == comp_response:
+elif response_int == comp_response:
   print("There's a draw")
 else:
   print("You lose")
