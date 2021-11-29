@@ -53,30 +53,35 @@ scissors = '''
 # Rock(0) wins against scissors(2).
 # Scissors(2) win against paper(1).
 # Paper(1) wins against rock(0).
-
-options = [rock, paper, scissors]
+'''
 
 #Write your code below this line 👇
 import random
 
-response = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.")
+options = [rock, paper, scissors]
+
+response = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
 
 response_int = int(response)
 if response_int >= 3 or response_int < 0:
-  print("You typed an invalid number")
+  print("You typed an invalid number. You lose.")
 else:
   print(options[response_int])
 
 # if response_int == 0:
 #   print(rock)
-# if response_int == 1:
+# elif response_int == 1:
 #   print(paper)
-# if response_int == 2:
+# elif response_int == 2:
 #   print(scissors)
+# else:
+#   print(None)
 
 comp_response = random.randint(0,2)
-print(f"Computer chooses: {comp_response}")
+print(f"Computer chose: {comp_response}")
 print(options[comp_response])
+
+
 # if comp_response == 0:
 #   print(rock)
 # if comp_response == 1:
@@ -91,3 +96,41 @@ elif response_int == comp_response:
   print("There's a draw")
 else:
   print("You lose")
+
+'''
+
+######## Angela's solution
+import random
+
+game_images = [rock, paper, scissors]
+
+user_choice = int(input("What do you choose? Type 0 for Rock 1 for Paper or 2 for Scissors.\n"))
+
+if user_choice >= 3 or user_choice < 0:
+  print("You typed an invalid number. You lose.")
+else:
+  print(game_images[user_choice])
+
+
+  computer_choice = random.randint(0,2)
+  print(f"Computer chose:")
+  print(game_images[computer_choice])
+
+
+  if user_choice == 0 and computer_choice == 2:
+    print("You win!")
+  elif computer_choice == 0 and user_choice == 2:
+    print("You lose")
+  elif computer_choice > user_choice:
+    print("You lose")
+  elif user_choice > computer_choice:
+    print("You win!")
+  elif user_choice == computer_choice:
+    print("It's a draw")
+  else:
+    print("You typed an invalid number. You lose.")
+
+
+
+
+
