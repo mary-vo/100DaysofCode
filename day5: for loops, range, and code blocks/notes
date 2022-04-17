@@ -1,1 +1,7 @@
+fruits = ["Apple", "Peach", "Pear"]
+# for {name for the singular item} in {list, here fruits}
+for fruit in fruits: 
+  print(fruit)
+  print(fruit + " Pie")
+
 
