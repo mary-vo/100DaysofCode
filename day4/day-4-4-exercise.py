@@ -58,45 +58,33 @@ scissors = '''
 #Write your code below this line 👇
 import random
 
-options = [rock, paper, scissors]
+#  List of choices
+choices = [rock, paper, scissors]
 
-response = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
+# User/my input
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 
-response_int = int(response)
-if response_int >= 3 or response_int < 0:
-  print("You typed an invalid number. You lose.")
+if user_choice >= 3 or user_choice < 0:
+  print("You typed an invalid number, you lose!")
 else:
-  print(options[response_int])
-
-# if response_int == 0:
-#   print(rock)
-# elif response_int == 1:
-#   print(paper)
-# elif response_int == 2:
-#   print(scissors)
-# else:
-#   print(None)
-
-comp_response = random.randint(0,2)
-print(f"Computer chose: {comp_response}")
-print(options[comp_response])
-
-
-# if comp_response == 0:
-#   print(rock)
-# if comp_response == 1:
-#   print(paper)
-# if comp_response ==2:
-#   print(scissors)
-
-
-if (response_int == 0 and comp_response == 2) or (response_int == 2 and comp_response == 1) or (response_int == 1 and comp_response == 0):  
-  print("You win")
-elif response_int == comp_response:
-  print("There's a draw")
-else:
-  print("You lose")
-
+  print(choices[user_choice])
+  
+  # Determine computer's random choice
+  computer_random_choice = random.randint(0,2)
+  computer_choice = choices[computer_random_choice]
+  print(f"Computer chose: {computer_choice}")
+  
+  # Take user/my input and computer's input to determine who wins  
+  if user_choice == computer_random_choice:
+    print("It's a draw.")
+  elif user_choice == 0 and computer_random_choice == 2:
+    print("You win.")
+  elif user_choice == 2 and computer_random_choice == 0:
+    print("You lose.")
+  elif user_choice > computer_random_choice:
+    print("You win.")
+  elif computer_random_choice > user_choice:
+    print("You lose.")
 '''
 
 ######## Angela's solution
