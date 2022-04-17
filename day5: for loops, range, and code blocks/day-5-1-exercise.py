@@ -43,15 +43,15 @@ for n in range(0, len(student_heights)):
 #Write your code below this row 👇
 print(student_heights)
 
-sum = 0
-for i in student_heights:
-  sum += i
-print(sum)
+total_height = 0
+for height in student_heights:
+  total_height += height
+# print(total_height)
 
-count = 0 
-for element in student_heights:
-  count += 1
-print(count)
+number_of_students = 0 
+for student in student_heights:
+  number_of_students += 1
+# print(number_of_students)
 
-average = round(sum / count)
+average = round(total_height / number_of_students)
 print(average)
